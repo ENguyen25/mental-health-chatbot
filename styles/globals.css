@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .dark-purple-fade {
+        @apply bg-gradient-to-b from-dark-blue to-purple;
+    }
+
+    .white-button {
+        @apply bg-white text-black rounded-lg px-4 py-1.5 font-semibold;
+    }
+  }
+
+html {
+    font-family: var(--font-open-sans);
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #170B3B, #341948);
+    height: 100vh;
+}
+
+.logo {
+    font-family: var(--font-oswald);
+    font-size: 1.5rem;
+}
