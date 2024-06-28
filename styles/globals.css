@@ -19,21 +19,36 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+    line-height: 40px;
 }
 
 h1 {
     font-size: 40px;
-    line-height: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 body {
     background-image: linear-gradient(to bottom, #170B3B, #341948);
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .logo {
     font-family: var(--font-oswald);
     font-size: 1.5rem;
+}
+
+.slick-list {
+    width: 90%;
+    margin: auto !important;
 }
 
 .slick-prev {
@@ -42,8 +57,13 @@ body {
 }
 
 .slick-next {
-    right: 15px !important;
+    right: 25px !important;
     z-index: 5;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px !important;
 }
 
 .slick-gradient-left,

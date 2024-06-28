@@ -35,8 +35,10 @@ const posts = [
 
 export default function Blog() {
     return (
-        <div className="w-full py-10 text-center">
-            <h2 className="mb-10">Check out our blog for more meditation, sleep, stress, and mental health resources.</h2>
+        <div className="w-full py-10">
+            <div className="w-full">
+                <h3 className="w-2/3 text-center mb-10 mx-auto">Check out our blog for more mental health resources.</h3>
+            </div>
             <BlogCarousel posts={posts} />
         </div>
     )

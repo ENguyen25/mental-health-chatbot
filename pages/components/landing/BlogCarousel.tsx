@@ -20,12 +20,19 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
     slidesToScroll: 1,
     responsive: [
       {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -40,16 +47,16 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
   };
 
   return (
-    <div className="bg-purple-2 relative py-5">
-        <div className="slick-gradient-left"></div>
-        <Slider {...settings}>
-            {posts.map((post, index) => (
-                <div key={index}>
-                <BlogPost title={post.title} image={post.image} description={post.description} />
-            </div>
-            ))}
-        </Slider>
-        <div className="slick-gradient-right"></div>
+    <div className="flex justify-center">
+        <div className="w-[90%] bg-purple-2 relative py-5 rounded-lg border border-purple-haze">
+            <Slider {...settings}>
+                {posts.map((post, index) => (
+                    <div key={index}>
+                    <BlogPost title={post.title} image={post.image} description={post.description} />
+                </div>
+                ))}
+            </Slider>
+        </div>
     </div>
   );
 };
