@@ -35,7 +35,7 @@ const posts = [
 
 export default function Blog() {
     return (
-        <div className="w-full py-10">
+        <div className="w-full pt-10 pb-20">
             <div className="w-full">
                 <h3 className="w-2/3 text-center mb-10 mx-auto">Check out our blog for more mental health resources.</h3>
             </div>

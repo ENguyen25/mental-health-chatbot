@@ -18,6 +18,8 @@ module.exports = {
           '2': '#412952'
         },
         'purple-haze': '#9388A2',
+        'pink': '#F8B7CD',
+        'blue': '#67A3D9'
       },
       fontFamily: {
         header: ["var(--font-oswald)"],

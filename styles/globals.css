@@ -10,6 +10,10 @@
     .white-button {
         @apply bg-white text-black rounded-lg px-4 py-1.5 font-semibold;
     }
+
+    .pink-gradient-button {
+        @apply bg-gradient-to-r from-pink to-blue text-black rounded-lg px-4 py-1.5 font-semibold;
+    }
   }
 
 html {

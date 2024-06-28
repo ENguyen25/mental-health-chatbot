@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type Feature = {
     id: number;
     icon: string;
@@ -6,10 +8,9 @@ type Feature = {
 };
 
 const features: Feature[] = [
-    { id: 1, icon: '1', title: 'Feature One', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-    { id: 2, icon: '2', title: 'Feature Two', description: 'Description for feature two.' },
-    { id: 3, icon: '2', title: 'Feature Three', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-    { id: 4, icon: '2', title: 'Feature Four', description: 'Description for feature four.' }
+    { id: 1, icon: '/images/chat.png', title: '24/7 Support', description: 'No need to wait for a therapy appointment or a crisis line. Our chat feature is available 24/7 at your fingertips.' },
+    { id: 2, icon: '/images/notes.png', title: 'Personal Coping Tools', description: 'Create a list of all the coping skills you need for each emotion you are feeling. Access them anytime needed.' },
+    { id: 3, icon: '/images/hands-and-heart.png', title: 'Instant Access to Help', description: 'If things get too hard, you can quickly access a crisis line in your area who will be available.' },
 ];
 
 export default function Features() {
@@ -20,11 +21,11 @@ export default function Features() {
                 <p>Our chatbot offers ongoing support, providing a listening ear for your challenges and offering diverse solutions. Explore personalized coping mechanisms alongside our AI counseling to enhance your well-being.</p>
             </div>
             <div className="py-10">
-                <div className="w-[800px] grid grid-cols-2 grid-flow-row gap-4">
+                <div className="w-[800px] grid grid-cols-3 grid-flow-row gap-4">
                     {features.map(feature => (
-                        <div key={feature.id} className="bg-dark-blue-2 p-4 rounded-lg border border-purple-haze">
-                            {/* <img src={feature.icon} alt={feature.title} /> */}
-                            <h2 className="text-xl font-bold">{feature.title}</h2>
+                        <div key={feature.id} className="bg-dark-blue-2 p-6 rounded-lg border border-purple-haze">
+                            <Image className="mx-auto mt-2 mb-6" src={feature.icon} alt={feature.title} width={70} height={70} />
+                            <h4 className="font-bold">{feature.title}</h4>
                             <p className="">{feature.description}</p>
                         </div>
                     ))}
