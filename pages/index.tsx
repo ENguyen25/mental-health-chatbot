@@ -9,20 +9,13 @@ type ConnectionStatus = {
   isConnected: boolean;
 };
 
+
 export const getServerSideProps: GetServerSideProps<
   ConnectionStatus
 > = async () => {
-  try {
-    await client.connect();
-    return {
-      props: { isConnected: true },
-    };
-  } catch (e) {
-    console.error(e);
-    return {
-      props: { isConnected: false },
-    };
-  }
+  return {
+    props: { isConnected: false },
+  };
 };
 
 export default function Home({
@@ -37,6 +30,11 @@ export default function Home({
       <Header />
       <Features />
       <Blog />
+      {isConnected ? (
+        <p>Connected to MongoDB</p>
+      ) : (
+        <p>Not connected to MongoDB</p>
+      )}
     </div>
   );
 }
