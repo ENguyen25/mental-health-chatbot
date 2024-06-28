@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="bg-dark-blue-1 flex flex-col items-center py-10">
-      <div className="flex justify-between w-1/2">
+      <div className="flex justify-between w-[700px]">
         <div>
           <h6 className="text-purple-haze">Company</h6>
           <ul>
