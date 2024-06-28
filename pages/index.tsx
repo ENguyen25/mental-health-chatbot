@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Head from "next/head";
 import client from "../lib/mongodb";
-import Blog from "./components/landing/blog";
-import Header from "./components/landing/header";
-import Features from "./components/landing/features";
+import Blog from './components/landing/Blog';
+import Header from "./components/landing/Header";
+import Features from "./components/landing/Features";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
 type ConnectionStatus = {
@@ -38,11 +38,6 @@ export default function Home({
       <Header />
       <Features />
       <Blog />
-      {isConnected ? (
-        <p>Connected to MongoDB</p>
-      ) : (
-        <p>Not connected to MongoDB</p>
-      )}
     </div>
   );
 }

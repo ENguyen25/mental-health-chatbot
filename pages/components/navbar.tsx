@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
       <div className="w-full flex justify-center py-5">
-        <nav className="w-[800px] flex items-end">
+        <nav className="w-[1000px] flex items-end">
             <p className="w-1/6 font-bold">ChatBot</p>
             <ul className="w-4/6 flex gap-8">
                 <li>Features</li>

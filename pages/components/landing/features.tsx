@@ -15,7 +15,7 @@ const features: Feature[] = [
 export default function Features() {
     return (
         <div className="w-full flex justify-center py-10">
-            <div className="w-[800px] grid grid-cols-2 grid-flow-row gap-4">
+            <div className="w-[1000px] grid grid-cols-2 grid-flow-row gap-4">
                 {features.map(feature => (
                     <div key={feature.id} className="bg-dark-blue-2 p-4 rounded-lg">
                         {/* <img src={feature.icon} alt={feature.title} /> */}
