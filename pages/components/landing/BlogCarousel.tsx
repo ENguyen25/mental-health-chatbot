@@ -50,7 +50,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
     <div className="flex justify-center">
         <div className="w-[90%] bg-purple-2 relative py-5 rounded-lg border border-purple-haze">
             <Slider {...settings}>
-                {posts.map((post, index) => (
+                {posts?.map((post, index) => (
                     <div key={index}>
                     <BlogPost title={post.title} image={post.image} description={post.description} />
                 </div>
