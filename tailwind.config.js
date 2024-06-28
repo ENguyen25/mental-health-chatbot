@@ -9,8 +9,14 @@ module.exports = {
     extend: {
       colors: {
         'black': '#0E050F',
-        'dark-blue': '#170B3B',
-        'purple': '#341948',
+        'dark-blue': {
+          '1': '#170B3B',
+          '2': '#271B4B'
+        },
+        'purple': {
+          '1': '#341948',
+          '2': '#412952'
+        },
         'purple-haze': '#9388A2',
       },
       fontFamily: {

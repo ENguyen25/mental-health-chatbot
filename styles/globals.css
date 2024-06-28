@@ -4,7 +4,7 @@
 
 @layer components {
     .dark-purple-fade {
-        @apply bg-gradient-to-b from-dark-blue to-purple;
+        @apply bg-gradient-to-b from-dark-blue-1 to-purple-1;
     }
 
     .white-button {
@@ -19,6 +19,11 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
 }
 
 body {

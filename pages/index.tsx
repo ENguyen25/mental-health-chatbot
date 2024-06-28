@@ -1,6 +1,8 @@
 import Head from "next/head";
 import client from "../lib/mongodb";
-import Blog from "./components/blog";
+import Blog from "./components/landing/blog";
+import Header from "./components/landing/header";
+import Features from "./components/landing/features";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
 type ConnectionStatus = {
@@ -32,7 +34,8 @@ export default function Home({
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-white">Everyone has the freedom of conscious thought and religion.</h1>
+      <Header />
+      <Features />
       <Blog />
     </div>
   );
