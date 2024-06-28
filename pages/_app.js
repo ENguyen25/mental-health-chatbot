@@ -17,10 +17,10 @@ const openSans = Open_Sans({
 
 export default function App({ Component, pageProps }) {
     return (
-        <html className={`${oswald.variable} ${openSans.variable}`}>
+        <main className={`${oswald.variable} ${openSans.variable}`}>
             <Layout>
                 <Component {...pageProps} />
             </Layout>
-        </html>
+        </main>
     )
 }

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Head from "next/head";
 import client from "../lib/mongodb";
 import Blog from "./components/landing/blog";
@@ -9,13 +10,20 @@ type ConnectionStatus = {
   isConnected: boolean;
 };
 
-
 export const getServerSideProps: GetServerSideProps<
   ConnectionStatus
 > = async () => {
-  return {
-    props: { isConnected: false },
-  };
+  try {
+    await client.connect();
+    return {
+      props: { isConnected: true },
+    };
+  } catch (e) {
+    console.error(e);
+    return {
+      props: { isConnected: false },
+    };
+  }
 };
 
 export default function Home({
