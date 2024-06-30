@@ -51,9 +51,14 @@ body {
     margin: 0;
 }
 
-/* .header {
-    background-image: url('/images/sparkles.jpg');
-} */
+.header-mask {
+    background-image: url('/images/hero-6.svg');
+    height: 750px;
+}
+
+.header {
+    height: 100%;
+}
 
 .slick-track {
     display: flex !important;
@@ -97,4 +102,9 @@ div:has(.testimonial) {
 
 .testimonial {
     height: inherit;
+}
+
+.scrolled {
+    background-color: #170B3B;
+    transition-duration: 300ms;
 }
