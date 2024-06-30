@@ -1,9 +1,9 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 
-import BlogPost from './BlogPost';
+import Testimonial from './Testimonial';
 
-interface BlogCarouselProps {
+interface TestimonialCarouselProps {
   posts: {
     title: string;
     image: string;
@@ -11,7 +11,7 @@ interface BlogCarouselProps {
   }[];
 }
 
-export default function BlogCarousel({ posts }: BlogCarouselProps) {
+export default function TestimonialCarousel({ posts }: TestimonialCarouselProps) {
   const settings = {
     infinite: true,
     speed: 500,
@@ -50,7 +50,7 @@ export default function BlogCarousel({ posts }: BlogCarouselProps) {
           <Slider {...settings}>
               {posts?.map((post, index) => (
                   <div key={index}>
-                  <BlogPost title={post.title} image={post.image} description={post.description} />
+                  <Testimonial title={post.title} image={post.image} description={post.description} />
               </div>
               ))}
           </Slider>

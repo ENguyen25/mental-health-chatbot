@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
     .dark-purple-fade {
         @apply bg-gradient-to-b from-dark-blue-1 to-purple-1;
@@ -23,11 +24,12 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    line-height: 40px;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-size: 40px;
+    line-height: 40px;
 }
 
 h2 {
@@ -36,6 +38,10 @@ h2 {
 
 h3 {
     font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 body {
@@ -50,41 +56,30 @@ body {
     font-size: 1.5rem;
 }
 
-.slick-list {
-    width: 90%;
-    margin: auto !important;
+.slick-prev,
+.slick-next {
+    position: absolute;
+    bottom: -102px;
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 100%;
+    outline: none;
+    z-index: 1;
 }
 
 .slick-prev {
-    left: 15px !important;
-    z-index: 5;
+    left: 46%;
+    background-image: url('/images/chevron-left.svg');
 }
 
 .slick-next {
-    right: 25px !important;
-    z-index: 5;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    font-size: 30px !important;
-}
-
-.slick-gradient-left,
-.slick-gradient-right {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  z-index: 3;
-}
-
-.slick-gradient-left {
-  left: 0;
-  background: linear-gradient(to right, rgba(14, 5, 15, 0.8), rgba(14, 5, 15, 0));
-}
-
-.slick-gradient-right {
-  right: 0;
-  background: linear-gradient(to left, rgba(14, 5, 15, 0.8), rgba(14, 5, 15, 0));
+    right: 46%;
+    background-image: url('/images/chevron-right.svg');
 }
