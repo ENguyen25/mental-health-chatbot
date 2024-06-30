@@ -18,7 +18,7 @@ const features: Feature[] = [
 
 export default function Features() {
     return (
-        <div className="w-full flex flex-col items-center py-10">
+        <div className="w-full flex flex-col items-center py-20">
             <div className="w-[600px] text-center">
                 <h2 className="mb-5">Quickly find peace of mind.</h2>
                 <p>Our chatbot offers ongoing support, providing a listening ear for your challenges and offering diverse solutions. Explore personalized coping mechanisms alongside our AI counseling to enhance your well-being.</p>

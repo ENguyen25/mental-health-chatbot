@@ -8,7 +8,7 @@ export default function Navbar() {
                 <li>Blog</li>
             </ul>
             <div className="w-1/6 flex justify-end">
-                <button className="white-button">Try Free</button>
+                <button className="white-button">Log In</button>
             </div>
         </nav>
       </div>

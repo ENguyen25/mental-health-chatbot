@@ -3,15 +3,14 @@ import 'slick-carousel/slick/slick.css';
 
 import Testimonial from './Testimonial';
 
-interface TestimonialCarouselProps {
-  posts: {
-    title: string;
-    image: string;
-    description: string;
+interface Testimonials {
+  testimonials: {
+    quote: string;
+    user: string;
   }[];
 }
 
-export default function TestimonialCarousel({ posts }: TestimonialCarouselProps) {
+export default function TestimonialCarousel({ testimonials }: Testimonials) {
   const settings = {
     infinite: true,
     speed: 500,
@@ -48,10 +47,8 @@ export default function TestimonialCarousel({ posts }: TestimonialCarouselProps)
   return (
       <div className="px-4">
           <Slider {...settings}>
-              {posts?.map((post, index) => (
-                  <div key={index}>
-                  <Testimonial title={post.title} image={post.image} description={post.description} />
-              </div>
+              {testimonials?.map((testimonial, index) => (
+                  <Testimonial key={index} quote={testimonial.quote} user={testimonial.user} />
               ))}
           </Slider>
       </div>

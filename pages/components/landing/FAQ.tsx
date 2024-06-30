@@ -15,15 +15,15 @@ export default function FAQ() {
     };
 
     return (
-        <div className="w-full flex justify-center py-20">
+        <div className="w-full flex justify-center pt-20 pb-40">
             <div className="w-[1000px]">
-                <h3 className="text-center mb-8">Frequently Asked Questions</h3>
+                <h2 className="text-center mb-8">Frequently Asked Questions</h2>
                 <div className="border-t border-gray-500">
                     {faqs.map((faq, index) => (
                         <>
                             <div key={index} onClick={() => handleTabClick(index)} className="border-b border-purple-haze">
                                 <div className="flex justify-between p-4 hover:cursor-pointer hover:bg-purple-2">
-                                    <p>{faq.question}</p>
+                                    <p className="text-xl">{faq.question}</p>
                                     {activeTab === index 
                                         ?
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -36,7 +36,7 @@ export default function FAQ() {
                                     }
                                 </div>
                                 {activeTab === index &&
-                                    <div className="p-4">{faq.answer}</div>
+                                    <div className="p-4 text-gray-300">{faq.answer}</div>
                                 }
                             </div>
                         </>

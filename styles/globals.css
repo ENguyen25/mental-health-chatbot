@@ -9,11 +9,11 @@
     }
 
     .white-button {
-        @apply bg-white text-black rounded-lg px-4 py-1.5 font-semibold;
+        @apply text-light-pink border border-light-pink rounded-lg px-4 py-1.5 font-semibold hover:bg-white hover:text-black;
     }
 
     .pink-gradient-button {
-        @apply bg-gradient-to-r from-pink to-blue text-black rounded-lg px-4 py-1.5 font-semibold;
+        @apply bg-gradient-to-r from-pink to-blue text-black rounded-lg px-4 py-1.5 font-semibold hover:bg-gradient-to-r hover:from-white hover:to-white;
     }
   }
 
@@ -56,6 +56,14 @@ body {
     font-size: 1.5rem;
 }
 
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: auto !important
+}
+
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -82,4 +90,12 @@ body {
 .slick-next {
     right: 46%;
     background-image: url('/images/chevron-right.svg');
+}
+
+div:has(.testimonial) {
+    height: 100%;
+}
+
+.testimonial {
+    height: inherit;
 }
