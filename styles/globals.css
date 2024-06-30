@@ -28,8 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 h2 {
@@ -51,10 +51,9 @@ body {
     margin: 0;
 }
 
-.logo {
-    font-family: var(--font-oswald);
-    font-size: 1.5rem;
-}
+/* .header {
+    background-image: url('/images/sparkles.jpg');
+} */
 
 .slick-track {
     display: flex !important;
