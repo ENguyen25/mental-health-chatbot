@@ -1,5 +1,5 @@
 import { useState } from "react";
-import frequentlyAsked from '../../data/FAQ';
+import frequentlyAsked from '../../../lib/data/FAQ';
 
 interface FAQItem {
     question: string;
