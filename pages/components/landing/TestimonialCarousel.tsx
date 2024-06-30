@@ -18,9 +18,17 @@ export default function TestimonialCarousel({ testimonials }: Testimonials) {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1800,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
         },
