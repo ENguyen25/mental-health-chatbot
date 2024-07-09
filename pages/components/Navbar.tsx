@@ -23,14 +23,14 @@ export default function Navbar() {
 }, []);
 
     return (
-      <div className="navbar fixed w-full flex justify-center py-5 z-10">
+      <div className="navbar fixed w-full flex justify-center p-5 z-10">
         <nav className="w-[1000px] flex items-center">
-            <p className="w-1/6 font-bold">CLARITY</p>
-            <ul className="w-4/6 flex gap-8">
+            <p className="hidden sm:block sm:w-1/6 font-bold">CLARITY</p>
+            <ul className="w-1/2 sm:w-4/6 flex gap-8">
                 <li>Features</li>
                 <li>Blog</li>
             </ul>
-            <div className="w-1/6 flex justify-end">
+            <div className="w-1/2 sm:w-1/6 flex justify-end">
                 <button className="white-button">Log In</button>
             </div>
         </nav>

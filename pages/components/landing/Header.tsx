@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Header() {
     return (
-        <div className="header-mask main-container pt-60">
+        <div className="header-mask main-container pt-32 lg:pt-60">
             <div className="header w-full flex justify-center items-end">
                 <div className="flex flex-col items-center lg:w-[1050px] lg:flex-row lg:justify-between lg:items-center lg:gap-10">
                     <Image src="/images/self-love.png" alt="mobile app" width={300} height={300} />
