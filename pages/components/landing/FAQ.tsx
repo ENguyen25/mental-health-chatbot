@@ -15,15 +15,15 @@ export default function FAQ() {
     };
 
     return (
-        <div className="w-full flex justify-center pt-20 pb-40">
+        <div className="container pt-80 flex justify-center">
             <div className="w-[1000px]">
-                <h2 className="text-center mb-8">Frequently Asked Questions</h2>
+                <h2 className="text-3xl text-center mb-8">Frequently Asked Questions</h2>
                 <div className="border-t border-gray-500">
                     {faqs.map((faq, index) => (
                         <>
                             <div key={index} onClick={() => handleTabClick(index)} className="border-b border-purple-haze">
                                 <div className="flex justify-between p-4 hover:cursor-pointer hover:bg-purple-2">
-                                    <p className="text-xl">{faq.question}</p>
+                                    <p className="text-lg">{faq.question}</p>
                                     {activeTab === index 
                                         ?
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

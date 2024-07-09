@@ -18,17 +18,17 @@ const features: Feature[] = [
 
 export default function Features() {
     return (
-        <div className="w-full flex flex-col items-center pt-32 py-20">
-            <div className="w-[600px] text-center">
-                <h2 className="mb-5">Quickly find peace of mind.</h2>
-                <p>Our chatbot offers ongoing support, providing a listening ear for your challenges and offering diverse solutions. Explore personalized coping mechanisms alongside our AI counseling to enhance your well-being.</p>
+        <div className="container flex flex-col items-center">
+            <div className="w-full lg:w-[600px] text-center">
+                <h2 className="text-3xl mb-5">Quickly find peace of mind.</h2>
+                <p className="mb-10">Our chatbot offers ongoing support, providing a listening ear for your challenges and offering diverse solutions. Explore personalized coping mechanisms alongside our AI counseling to enhance your well-being.</p>
             </div>
-            <div className="py-10">
-                <div className="w-[1000px] grid grid-cols-3 grid-flow-row gap-10">
+            <div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-10">
                     {features.map(feature => (
                         <div key={feature.id} className="bg-dark-blue-2 p-6 rounded-lg border border-purple-haze">
                             <Image className="mx-auto mt-2 mb-6" src={feature.icon} alt={feature.title} width={70} height={70} />
-                            <h4 className="font-bold">{feature.title}</h4>
+                            <h3 className="text-xl">{feature.title}</h3>
                             <p className="">{feature.description}</p>
                         </div>
                     ))}

@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="bg-dark-blue-1 flex flex-col items-center py-10">
-      <div className="flex justify-between w-[700px]">
-        <div>
+    <div className="bg-dark-blue-1 container flex flex-col items-center py-10">
+      <div className="w-full lg:w-[700px] lg:flex lg:justify-between">
+        <div className="mb-10 lg:mb-0">
           <h6 className="text-purple-haze">Company</h6>
           <ul>
             <li>About</li>
@@ -10,7 +10,7 @@ export default function Footer() {
             <li>Blog</li>
           </ul>
         </div>
-        <div>
+        <div className="mb-10 lg:mb-0">
           <h6 className="text-purple-haze">Offers</h6>
           <ul>
             <li>Buy a Gift</li>
@@ -28,7 +28,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-purple-haze mt-10">Copyright © 2024 Calm. All rights reserved</p>
+      <p className="text-purple-haze mt-10">Copyright © 2024 Clarity. All rights reserved</p>
     </div>
   )
   }

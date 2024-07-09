@@ -4,6 +4,10 @@
 
 
 @layer components {
+    .container {
+        @apply w-full px-8 py-32 lg:w-[1050px] lg:py-48;
+    }
+
     .dark-purple-fade {
         @apply bg-gradient-to-b from-dark-blue-1 to-purple-1;
     }
@@ -27,23 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 60px;
-    line-height: 60px;
-}
-
-h2 {
-    font-size: 32px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 18px;
-}
-
 body {
     background-image: linear-gradient(to bottom, #170B3B, #341948);
     height: 100%;
@@ -53,7 +40,6 @@ body {
 
 .header-mask {
     background-image: url('/images/hero-6.svg');
-    height: 750px;
 }
 
 .header {
@@ -87,12 +73,12 @@ body {
 }
 
 .slick-prev {
-    left: 46%;
+    left: 36%;
     background-image: url('/images/chevron-left.svg');
 }
 
 .slick-next {
-    right: 46%;
+    right: 36%;
     background-image: url('/images/chevron-right.svg');
 }
 
