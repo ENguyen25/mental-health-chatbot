@@ -53,7 +53,7 @@ export default function TestimonialCarousel({ testimonials }: Testimonials) {
   };
 
   return (
-      <div className="px-4">
+      <div className="px-8">
           <Slider {...settings}>
               {testimonials?.map((testimonial, index) => (
                   <Testimonial key={index} quote={testimonial.quote} user={testimonial.user} />

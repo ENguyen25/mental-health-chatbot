@@ -15,7 +15,7 @@ export default function FAQ() {
     };
 
     return (
-        <div className="container pt-80 flex justify-center">
+        <div className="main-container pt-64 flex justify-center">
             <div className="w-[1000px]">
                 <h2 className="text-3xl text-center mb-8">Frequently Asked Questions</h2>
                 <div className="border-t border-gray-500">

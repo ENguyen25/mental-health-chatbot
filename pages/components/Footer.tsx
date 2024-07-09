@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="bg-dark-blue-1 container flex flex-col items-center py-10">
-      <div className="w-full lg:w-[700px] lg:flex lg:justify-between">
+    <div className="main-container bg-dark-blue-1 flex flex-col items-center py-10">
+      <div className="w-full sm:flex sm:justify-between lg:w-[1000px]">
         <div className="mb-10 lg:mb-0">
           <h6 className="text-purple-haze">Company</h6>
           <ul>
