@@ -1,5 +1,5 @@
 import TestimonialCarousel from './TestimonialCarousel';
-import testimonialArray from '../../../lib/data/testimonials';
+import testimonialArray from '../../lib/data/testimonials';
 
 export default function Blog() {
     return (
